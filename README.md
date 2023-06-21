@@ -6,7 +6,9 @@
 
 
 **Node JS module to retrieve login credentials for an MQTT client via ecoflow API.**
-The Ecoflow PowerStations come with an excellent APP for SmartPhones, which allows to read the status of the storage, consumption of the connections and make configurations. In the background, this app uses the MQTT protocol known from IOT communication, whereby the communication always runs via the Ecoflow servers. For the connection to a smart-home system or an energy management system, the MQTT broker can be used. Unfortunately, this requires access data that are not identical to those that were originally specified in the APP. 
+
+The Ecoflow PowerStations come with an excellent APP for SmartPhones, which allows to read the status of the storage, consumption of the connections and make configurations. In the background, this app uses the MQTT protocol known from IOT communication, whereby the communication always runs via the Ecoflow servers. For the connection to a smart-home system or an energy management system, the MQTT broker can be used. Unfortunately, this requires access data that are not identical to those that were originally specified in the APP. _
+
 
 This node module performs exactly the same steps that are used by the APP to use any MQTT client to access the Ecoflow PowerStation. 
 
@@ -38,7 +40,7 @@ ecoflowmqttcredentials.retrieve(settings).then(function(mqttsettings) {
 ## Output
 If successfull it returns a quite large JSON object you could use in your code.
 
-```JSON
+```javascript
 {
   api_userid: '1234567890',
   api_token: 'eyJ...long....JWT-Token...',     
