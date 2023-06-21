@@ -1,0 +1,28 @@
+{
+  "name": "ecoflow_mqtt_credentials",
+  "version": "1.0.0",
+  "description": "Retrieve login credentials for an MQTT client via ecoflow API.",
+  "main": "lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/energychain/ecoflow_mqtt_credentials.git"
+  },
+  "keywords": [
+    "ecoflow",
+    "mqtt"
+  ],
+  "author": "STROMDAO GmbH <dev@stromdao.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/energychain/ecoflow_mqtt_credentials/issues"
+  },
+  "homepage": "https://github.com/energychain/ecoflow_mqtt_credentials#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "base-64": "^1.0.0",
+    "uuid": "^9.0.0"
+  }
+}
