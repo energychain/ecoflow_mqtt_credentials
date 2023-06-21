@@ -21,8 +21,11 @@ const retrieve = async function(settings) {
         });
 
 
-        if(typeof loginRequest.data.data.token == 'undefined') throw "Login Error - Token not in responds of api.ecoflow.com call";
-
+        if((typeof loginRequest.data.data == 'undefined') || (typeof loginRequest.data.data.token == 'undefined')) {
+            console.error(loginRequest.data);
+            throw "Login Error - Token not in responds of api.ecoflow.com call";
+        }  
+        
         let res =  {
             api_userid:loginRequest.data.data.user.userId,
             api_token:loginRequest.data.data.token
